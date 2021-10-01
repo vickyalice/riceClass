@@ -15,19 +15,24 @@ body[風格=首頁] a {
   font-size: 20px;
 }
 
-body[風格=首頁] h1 {
-  margin-top: 40px;
+body[風格=首頁] nav {
   margin-left: 10px;
-  margin-bottom: -30px;
+}
+
+body[風格=首頁] h1 {
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-bottom: -75px;
 }
 
 body[風格=首頁] div {
   width: 520px;
   border-top: 1px dotted;
   border-bottom: 1px dotted;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 55px;
+  margin-bottom: 55px;
   margin-left: 10px;
+  padding-top: 5px;
 }
 
 body[風格=首頁] #d1:hover {
@@ -48,5 +53,11 @@ body[風格=首頁] #d3:hover {
 body[風格=首頁] #d4:hover {
   color: #eb9b08;
   font-weight: bold;
+}
+
+body[風格=首頁] img {
+  border-radius: 10px;
+  width: 160px;
+  height: 160px;
 }
 /*# sourceMappingURL=all.css.map */
