@@ -43,18 +43,18 @@
     <div id="user">
         <h1>會員註冊</h1>
         <div style="height:20px;"></div>
-        姓名<br><input type="text" required>
+        姓名<br><input type="text" name="name" required>
         <br><br>
-        連絡電話<br><input type="text" placeholder="09-xxxxxxxx" required>
+        連絡電話<br><input type="text" name="phone" placeholder="09-xxxxxxxx" required>
         <br><br>
-        G-mail<br><input type="text" placeholder="xxxx@gmail.com" required>
+        G-mail<br><input type="text" name="gmail" placeholder="xxxx@gmail.com" required>
         <br><br>
-        設定帳號<br><input type="text" required>
+        設定帳號<br><input type="text" name="account" required>
         <br><br>
-        設定密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw1" class="password" required>
+        設定密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw1" class="password" name="pw1" required>
         <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
         <br><br>
-        確認密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw2" class="password" required>
+        確認密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw2" class="password" name="pw2" required>
         <i class="far fa-eye" id="eye2" onclick="showEye2()"></i>
         <div style="height:50px;"></div>
         <input class="btn" type="submit" value="註冊" onclick="showSuccessMessage()">
