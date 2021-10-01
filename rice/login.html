@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>利芳米行</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="D:/fontawesome-free-5.15.3-web/css/all.css">
+    <script>
+        var flag = 0;
+        function showEye() {
+            if (flag == 0) {
+                document.getElementById("pw").type = "text";
+                document.getElementById("eye").className = "far fa-eye-slash";
+                flag = 1;
+            } else {
+                document.getElementById("pw").type = "password";
+                document.getElementById("eye").className = "far fa-eye";
+                flag = 0;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div style="height:10px"></div>
+    <h1>會員登入</h1>
+    <hr>
+    <div style="height:20px"></div>
+    <form style="text-align:center">
+        <p>帳號<br>
+            <input type="text" name="account" class="borderBottom" style="margin-top: 10px;" size="26" required>
+        </p>
+        <br>
+        <p>密碼<br>
+            <input type="password" style="margin-left:24px ;margin-top: 10px;" id="pw" name="password" size="26" required>
+            <i class="far fa-eye" id="eye" onclick="showEye()"></i>
+        </p>
+        <br>
+        <p><button class="btn" style="cursor: pointer;">登入</button></p>
+        <button id="forgetBtn">忘記密碼</button>
+        </p>
+    </form>
+    <div style="height:20px"></div>
+    <div id="footer">
+        <hr>
+        <p class="res">未註冊過，按「註冊」成為我們的新會員<br></p>
+        <button class="btn" style="width: 200px;font-size:14px;">CREATE NEW ACCOUNT</button>
+    </div>
+</body>
+
+</html>

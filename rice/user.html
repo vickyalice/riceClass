@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>會員註冊</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="D:/fontawesome-free-5.15.3-web/css/all.css">
+    <script>
+        function showSuccessMessage() {
+            alert("註冊成功");
+        }
+    </script>
+    <script>
+        var flag = 0, flag2 = 0;
+        function showEye1() {
+            if (flag == 0) {
+                document.getElementById("pw1").type = "text";
+                document.getElementById("eye1").className = "far fa-eye-slash";
+                flag = 1;
+            } else {
+                document.getElementById("pw1").type = "password";
+                document.getElementById("eye1").className = "far fa-eye";
+                flag = 0;
+            }
+        }
+        function showEye2() {
+            if (flag2 == 0) {
+                document.getElementById("pw2").type = "text";
+                document.getElementById("eye2").className = "far fa-eye-slash";
+                flag2 = 1;
+            } else {
+                document.getElementById("pw2").type = "password";
+                document.getElementById("eye2").className = "far fa-eye";
+                flag2 = 0;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <div id="user">
+        <h1>會員註冊</h1>
+        <div style="height:20px;"></div>
+        姓名<br><input type="text" required>
+        <br><br>
+        連絡電話<br><input type="text" placeholder="09-xxxxxxxx" required>
+        <br><br>
+        G-mail<br><input type="text" placeholder="xxxx@gmail.com" required>
+        <br><br>
+        設定帳號<br><input type="text" required>
+        <br><br>
+        設定密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw1" class="password" required>
+        <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
+        <br><br>
+        確認密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw2" class="password" required>
+        <i class="far fa-eye" id="eye2" onclick="showEye2()"></i>
+        <div style="height:50px;"></div>
+        <input class="btn" type="submit" value="註冊" onclick="showSuccessMessage()">
+        <br><br>
+        <a href="index.html" style="font-size: 14px;">回到首頁</a>
+        <div style="height:50px"></div>
+    </div>
+</body>
+
+</html>

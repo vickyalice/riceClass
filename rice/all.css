@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url(style.css);
+html[風格=置中] {
+  margin-top: -50px;
+}
+
+body[風格=首頁] {
+  background-image: url("看牌-2.PNG");
+  background-repeat: repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+body[風格=首頁] a {
+  font-size: 20px;
+}
+
+body[風格=首頁] h1 {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+body[風格=首頁] div {
+  width: 520px;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+body[風格=首頁] #d1:hover {
+  color: #eb9b08;
+  font-weight: bold;
+}
+
+body[風格=首頁] #d2:hover {
+  color: #eb9b08;
+  font-weight: bold;
+}
+
+body[風格=首頁] #d3:hover {
+  color: #eb9b08;
+  font-weight: bold;
+}
+
+body[風格=首頁] #d4:hover {
+  color: #eb9b08;
+  font-weight: bold;
+}
+/*# sourceMappingURL=all.css.map */
