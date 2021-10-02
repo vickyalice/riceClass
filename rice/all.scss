@@ -3,7 +3,7 @@ html[風格=置中]{
     margin-top: -50px;
 }
 body[風格=首頁]{
-    background-image: url("看牌-2.PNG");
+    background-image: url("看牌.PNG");
     background-repeat:repeat;
     background-size:cover;
     margin-left: 10px;
@@ -47,5 +47,22 @@ body[風格=首頁]{
         border-radius: 10px;
         width: 160px;
         height: 160px;
+    }
+}
+body[風格=登入]{
+    input[type=text]{
+        border-radius: 5px;
+    }
+    input[type=password]{
+        border-radius: 5px;
+    }
+    .main{
+        margin-left: auto;
+        margin-right: auto;
+        padding:10px;
+        text-align:center;
+        box-shadow:3px 3px 9px #FFE153;
+        width: 300px;
+        height:300px;
     }
 }

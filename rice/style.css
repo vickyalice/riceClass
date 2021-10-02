@@ -10,6 +10,9 @@ span{
 a{
     color:darkorange;
 }
+p{
+    font-size:18px;
+}
 table{
     margin: center;
     text-align: center;
@@ -44,6 +47,9 @@ input{
 input[type="password"]{
     border:0px white;
     border-bottom: 1px solid;
+}
+.res{
+    font-size:14px;
 }
 .btn{
     font-size:16px;
