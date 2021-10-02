@@ -1,8 +1,8 @@
 @import url(style.css);
-html[風格=置中]{
+html[in=middle]{
     margin-top: -50px;
 }
-body[風格=首頁]{
+body[in=index]{
     background-image: url("看牌.PNG");
     background-repeat:repeat;
     background-size:cover;
@@ -49,7 +49,7 @@ body[風格=首頁]{
         height: 160px;
     }
 }
-body[風格=登入]{
+body[in=login]{
     input[type=text]{
         border-radius: 5px;
     }
@@ -61,7 +61,7 @@ body[風格=登入]{
         margin-right: auto;
         padding:10px;
         text-align:center;
-        box-shadow:3px 3px 9px #FFE153;
+        box-shadow:3px 3px 30px #FFE153;
         width: 300px;
         height:300px;
     }
