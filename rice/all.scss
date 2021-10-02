@@ -1,79 +1,96 @@
 @import url(style.css);
-html[in=middle]{
-    margin-top: -50px;
+html[in="middle"] {
+  margin-top: -50px;
 }
-body[in=index]{
-    background-image: url("看牌.PNG");
-    background-repeat:repeat;
-    background-size:cover;
+body[in="index"] {
+  background-image: url("看牌.PNG");
+  background-repeat: repeat;
+  background-size: cover;
+  margin-left: 10px;
+  a {
+    font-size: 20px;
+  }
+  nav {
     margin-left: 10px;
-    a{
-        font-size:20px;
-    }
-    nav{
-        margin-left: 10px;
-    }
-    h1{
-        margin-top:35px;
-        margin-left: 10px;
-        margin-bottom: -75px;
-    }
-    div{
-        width:520px;
-        border-top: 1px dotted;
-        border-bottom: 1px dotted;
-        margin-top: 55px;
-        margin-bottom: 55px;
-        margin-left: 10px;
-        padding-top: 5px;
-    }
-    #d1:hover{
-        color:rgb(235, 155, 8);
-        font-weight:  bold;
-    }
-    #d2:hover{
-        color:rgb(235, 155, 8);
-        font-weight:  bold;
-    }
-    #d3:hover{
-        color:rgb(235, 155, 8);
-        font-weight:  bold;
-    }
-    #d4:hover{
-        color:rgb(235, 155, 8);
-        font-weight:  bold;
-    }
-    img{
-        border-radius: 10px;
-        width: 160px;
-        height: 160px;
-    }
+  }
+  h1 {
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: -75px;
+  }
+  div {
+    width: 520px;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+  #d1:hover {
+    color: rgb(235, 155, 8);
+    font-weight: bold;
+  }
+  #d2:hover {
+    color: rgb(235, 155, 8);
+    font-weight: bold;
+  }
+  #d3:hover {
+    color: rgb(235, 155, 8);
+    font-weight: bold;
+  }
+  #d4:hover {
+    color: rgb(235, 155, 8);
+    font-weight: bold;
+  }
+  img {
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+  }
 }
-body[in=login]{
-    input[type=text]{
-        border-radius: 5px;
-    }
-    input[type=password]{
-        border-radius: 5px;
-    }
-    .main{
-        margin-left: auto;
-        margin-right: auto;
-        padding:10px;
-        text-align:center;
-        box-shadow:3px 3px 30px #FFE153;
-        width: 300px;
-        height:300px;
-    }
+body[in="login"] {
+  text-align: center;
+  input[type="text"] {
+    border-radius: 5px;
+  }
+  input[type="password"] {
+    border-radius: 5px;
+  }
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 30px #ffe153;
+    width: 300px;
+    height: 300px;
+  }
+  #forgetBtn {
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
-body[in=resigter]{
-    .btn{
-        width: 100px;
-        height: 30px;
-        cursor: pointer;
-        background-color: #f8edb7;
-        color:black;
-        font-weight: bold;
-        font-size:18px;
-    }
+body[in="resigter"] {
+  .btn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #f8edb7;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #user {
+    box-shadow: 3px 3px 10px #ffe153;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
