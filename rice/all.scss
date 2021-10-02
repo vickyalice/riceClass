@@ -94,3 +94,14 @@ body[in="resigter"] {
     margin-right: auto;
   }
 }
+body[in="riceType"]{
+    background-image: url(riceType背景圖.png);
+    text-align: center;
+    input[type="submit"]{
+        border-radius: 5px;
+        cursor: pointer;
+        background-color:#f8edb7;
+        font-size:15px;
+        font-weight:bold;
+    }
+}

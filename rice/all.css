@@ -112,4 +112,17 @@ body[in="resigter"] #user {
   margin-left: auto;
   margin-right: auto;
 }
+
+body[in="riceType"] {
+  background-image: url(riceType背景圖.png);
+  text-align: center;
+}
+
+body[in="riceType"] input[type="submit"] {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f8edb7;
+  font-size: 15px;
+  font-weight: bold;
+}
 /*# sourceMappingURL=all.css.map */

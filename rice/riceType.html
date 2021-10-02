@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="D:/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 
-<body>
-    <div style="height:30px">
+<body in=riceType>
+    <div style="height:30px;text-align:left;">
         <i class="fas fa-arrow-circle-right"><a href="index.html">&nbsp回到首頁&nbsp</a></i>
     </div>
+    <div style="font-size:30px;margin-bottom: 30px;">米種介紹</div>
     <table style="border-top: 1px solid;border-bottom: 1px solid;">
-        <caption style="font-size:24px">米種介紹</caption>
-        <tr style="background-color:#FFE8C2;height: 20px;">
+        <tr style="background-color:#faedab;height: 20px;font-size: 20px;">
             <th>名稱</th>
             <th>圖片</th>
             <th>價格</th>
             <th>來源地</th>
             <th>製作日期</th>
+            <th>購買數量</th>
+            <th>訂購</th>
         </tr>
         <tr>
             <td>圓米</td>
@@ -27,6 +29,12 @@
             <td>26/1斤</td>
             <td>台灣</td>
             <td>2021</td>
+            <td>
+                <input type="number" name="roundNum" value="10" min="10" max="1000" step="5">
+            </td>
+            <td>
+                <input type="submit" name="roundBuy" value="加入購物車">
+            </td>
         </tr>
         <tr>
             <td>長米</td>
@@ -34,6 +42,12 @@
             <td>29/1斤</td>
             <td>台灣</td>
             <td>2021</td>
+            <td>
+                <input type="number" name="longNum" value="10" min="10" max="1000" step="5">
+            </td>
+            <td>
+                <input type="submit" name="longBuy" value="加入購物車">
+            </td>
         </tr>
         <tr>
             <td>糙米</td>
@@ -41,6 +55,12 @@
             <td>30/1斤</td>
             <td>台灣</td>
             <td>2021</td>
+            <td>
+                <input type="number" name="brownNum" value="10" min="10" max="1000" step="5">
+            </td>
+            <td>
+                <input type="submit" name="brownBuy" value="加入購物車">
+            </td>
         </tr>
     </table>
 </body>
