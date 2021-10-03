@@ -5,14 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="D:/fontawesome-free-5.15.3-web/css/all.css">
     <title>利芳米行</title>
 </head>
 
 <body in=cart>
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     <lord-icon src="https://cdn.lordicon.com/slkvcfos.json" trigger="hover" colors="primary:#121331,secondary:#faedab"
-        style="width:90px;height:90px;">
+        style="width:50px;height:50px;">
     </lord-icon>
+    <span>我的購物車</span>
+    <div style="margin-bottom: 30px;"></div>
+    <table>
+        <tr>
+            <th>品名</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>價錢</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>圓米</td>
+            <td>26</td>
+            <td><input type="number" name="num" value="10" min=10 max=1000 step=5  style="width:50px;"></td>
+            <td><span>120</span></td>
+            <td>
+                <input type="button" id="del" name="del" value="❌">
+            </td>
+        </tr>
+        <!-- <tr>
+            <td colspan="3" style="text-align:left;">折扣碼:</td>
+            <td style="text-align:center;">ffff123</td>
+        </tr> -->
+        <tr>
+            <td colspan="3" style="text-align:left">總價:</td>
+            <td style="text-align:center;">120</td>
+        </tr>
+    </table>
 </body>
 
 </html>

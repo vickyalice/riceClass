@@ -106,5 +106,17 @@ body[in="riceType"]{
     }
 }
 body[in=cart]{
-  
+  span{
+    text-decoration: none;
+  }
+  td{
+    height:80px;
+  }
+  #del{
+    width:40px;
+    height:40px;
+    font-size:18px;
+    background-color:white;
+    border: none;
+  }
 }

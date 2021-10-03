@@ -125,4 +125,20 @@ body[in="riceType"] input[type="submit"] {
   font-size: 15px;
   font-weight: bold;
 }
+
+body[in=cart] span {
+  text-decoration: none;
+}
+
+body[in=cart] td {
+  height: 80px;
+}
+
+body[in=cart] #del {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-color: white;
+  border: none;
+}
 /*# sourceMappingURL=all.css.map */
