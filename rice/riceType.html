@@ -6,6 +6,8 @@
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="D:/fontawesome-free-5.15.3-web/css/all.css">
+    <script src="all.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body in=riceType>
@@ -32,45 +34,7 @@
                 <th>購買數量</th>
                 <th>訂購</th>
             </tr>
-            <tr>
-                <td>圓米</td>
-                <td><img src="Images/roundrice.jpg" alt="圓米"></td>
-                <td>26/1斤</td>
-                <td>台灣</td>
-                <td>2021</td>
-                <td>
-                    <input type="number" name="roundNum" value="10" min="10" max="1000" step="5">
-                </td>
-                <td>
-                    <input type="submit" name="roundBuy" value="加入購物車">
-                </td>
-            </tr>
-            <tr>
-                <td>長米</td>
-                <td><img src="Images/longrice.jpg" alt="長米"></td>
-                <td>29/1斤</td>
-                <td>台灣</td>
-                <td>2021</td>
-                <td>
-                    <input type="number" name="longNum" value="10" min="10" max="1000" step="5">
-                </td>
-                <td>
-                    <input type="submit" name="longBuy" value="加入購物車">
-                </td>
-            </tr>
-            <tr>
-                <td>糙米</td>
-                <td><img src="Images/brownrice.jpg" alt="糙米"></td>
-                <td>30/1斤</td>
-                <td>台灣</td>
-                <td>2021</td>
-                <td>
-                    <input type="number" name="brownNum" value="10" min="10" max="1000" step="5">
-                </td>
-                <td>
-                    <input type="submit" name="brownBuy" value="加入購物車">
-                </td>
-            </tr>
+            <tbody id="riceIntroduce"></tbody>
         </table>
     </form>
 </body>
