@@ -1,11 +1,10 @@
-@charset "UTF-8";
 @import url(style.css);
 html[in="middle"] {
   margin-top: -50px;
 }
 
 body[in="index"] {
-  background-image: url("Images/看牌.PNG");
+  background-image: url("Images/image.png");
   background-repeat: repeat;
   background-size: cover;
   margin-left: 10px;
@@ -114,7 +113,7 @@ body[in="resigter"] #user {
 }
 
 body[in="riceType"] {
-  background-image: url("Images/riceType背景圖.png");
+  background-image: url("Images/riceTypeImage.png");
   text-align: center;
 }
 
