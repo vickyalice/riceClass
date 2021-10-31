@@ -7,7 +7,7 @@ body[in="index"] {
   background-image: url("Images/image.png");
   background-repeat: repeat;
   background-size: cover;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 body[in="index"] a {
