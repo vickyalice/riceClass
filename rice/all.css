@@ -125,6 +125,10 @@ body[in="riceType"] input[type="submit"] {
   font-weight: bold;
 }
 
+body[in=cart] table {
+  font-size: 24px;
+}
+
 body[in=cart] span {
   text-decoration: none;
 }
@@ -139,5 +143,9 @@ body[in=cart] #del {
   font-size: 18px;
   background-color: white;
   border: none;
+}
+
+body[in=cart] input[type="button"] {
+  cursor: pointer;
 }
 /*# sourceMappingURL=all.css.map */

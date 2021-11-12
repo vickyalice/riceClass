@@ -106,6 +106,9 @@ body[in="riceType"]{
     }
 }
 body[in=cart]{
+  table{
+    font-size:24px;
+  }
   span{
     text-decoration: none;
   }
@@ -118,5 +121,8 @@ body[in=cart]{
     font-size:18px;
     background-color:white;
     border: none;
+  }
+  input[type="button"]{
+    cursor: pointer;
   }
 }

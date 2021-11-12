@@ -10,9 +10,33 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
     <title>利芳米行</title>
+    <script>
+        function changeSum() {
+            var r_up = document.getElementById("rUp").textContent;
+            var l_up = document.getElementById("lUp").textContent;
+            var b_up = document.getElementById("bUp").textContent;
+            var r_num = document.getElementById("rNum").value;
+            var l_num = document.getElementById("lNum").value;
+            var b_num = document.getElementById("bNum").value;
+            document.getElementById("rPrice").innerHTML = r_up*r_num;
+            document.getElementById("lPrice").innerHTML = l_up*l_num;
+            document.getElementById("bPrice").innerHTML = b_up*b_num;
+            document.getElementById("Sum").innerHTML = r_up*r_num + l_up*l_num + b_up*b_num;
+        }
+        function rdel(){
+            $('#rTb').hide();
+            $('#rPrice').text(0);
+        }
+        function ldel(){
+            $('#lTb').hide();
+        }
+        function bdel(){
+            $('#bTb').hide();
+        }
+    </script>
 </head>
 
-<body in=cart style="background-image: url(/Images/riceType背景圖.png);">
+<body in=cart style="background-image: url(/Images/riceTypeImage.png);">
     <include src="nav.html"></include>
     
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
@@ -25,26 +49,41 @@
         <tr>
             <th>品名</th>
             <th>單價</th>
-            <th>數量</th>
+            <th>數量(斤)</th>
             <th>價錢</th>
             <th></th>
         </tr>
-        <tr>
+        <tr id="rTb">
             <td>圓米</td>
-            <td>26</td>
-            <td><input type="number" name="num" value="10" min=10 max=1000 step=5  style="width:50px;"></td>
-            <td><span>120</span></td>
+            <td><span id="rUp">26</span></td>
+            <td><input type="number" name="num" id="rNum" value="10" min=10 max=1000 step=5  style="width:50px;" onchange="changeSum()"></td>
+            <td><span id="rPrice">260</span></td>
             <td>
-                <input type="button" id="del" name="del" value="❌">
+                <input type="button" id="del" name="del" value="❌" onclick="rdel()">
             </td>
         </tr>
-        <!-- <tr>
-            <td colspan="3" style="text-align:left;">折扣碼:</td>
-            <td style="text-align:center;">ffff123</td>
-        </tr> -->
+        <tr id="lTb">
+            <td>長米</td>
+            <td id="lUp">29</td>
+            <td><input type="number" name="num" id="lNum" value="10" min=10 max=1000 step=5  style="width:50px;" onchange="changeSum()"></td>
+            <td><span id="lPrice">290</span></td>
+            <td>
+                <input type="button" id="del" name="del" value="❌" onclick="ldel()">
+            </td>
+        </tr>
+        <tr id="bTb">
+            <td>糙米</td>
+            <td id="bUp">30</td>
+            <td><input type="number" name="num" id="bNum" value="10" min=10 max=1000 step=5  style="width:50px;" onchange="changeSum()"></td>
+            <td><span id="bPrice">300</span></td>
+            <td>
+                <input type="button" id="del" name="del" value="❌" onclick="bdel()">
+            </td>
+        </tr>
         <tr>
-            <td colspan="3" style="text-align:left">總價:</td>
-            <td style="text-align:center;">130</td>
+            <td>總價:</td>
+            <td style="width:50px;"></td>
+            <td colspan="4" id="Sum" onchange="changeSum()">850</td>
         </tr>
     </table>
 </body>
