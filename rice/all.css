@@ -60,6 +60,10 @@ body[in="index"] img {
   height: 160px;
 }
 
+body[in="index"] #imgPosition span {
+  font-size: 18px;
+}
+
 body[in="login"] {
   text-align: center;
 }
