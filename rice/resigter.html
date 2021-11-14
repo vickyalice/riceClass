@@ -6,36 +6,12 @@
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
     <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
+    <script src="all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
     <script>
         function showSuccessMessage() {
             alert("註冊成功");
-        }
-    </script>
-    <script>
-        var flag = 0, flag2 = 0;
-        function showEye1() {
-            if (flag == 0) {
-                document.getElementById("pw1").type = "text";
-                document.getElementById("eye1").className = "far fa-eye-slash";
-                flag = 1;
-            } else {
-                document.getElementById("pw1").type = "password";
-                document.getElementById("eye1").className = "far fa-eye";
-                flag = 0;
-            }
-        }
-        function showEye2() {
-            if (flag2 == 0) {
-                document.getElementById("pw2").type = "text";
-                document.getElementById("eye2").className = "far fa-eye-slash";
-                flag2 = 1;
-            } else {
-                document.getElementById("pw2").type = "password";
-                document.getElementById("eye2").className = "far fa-eye";
-                flag2 = 0;
-            }
         }
     </script>
 </head>
@@ -55,7 +31,7 @@
         <br><br>
         連絡電話<br><input type="text" name="phone" placeholder="09-xxxxxxxx" required>
         <br><br>
-        G-mail<br><input type="text" name="gmail" placeholder="xxxx@gmail.com" required>
+        G-mail<br><input type="text" name="gmail" placeholder="xxx@gmail.com" required>
         <br><br>
         設定帳號<br><input type="text" name="account" required>
         <br><br>

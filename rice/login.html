@@ -6,22 +6,9 @@
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
     <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
+    <script src = "all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
-    <script>
-        var flag = 0;
-        function showEye() {
-            if (flag == 0) {
-                document.getElementById("pw").type = "text";
-                document.getElementById("eye").className = "far fa-eye-slash";
-                flag = 1;
-            } else {
-                document.getElementById("pw").type = "password";
-                document.getElementById("eye").className = "far fa-eye";
-                flag = 0;
-            }
-        }
-    </script>
 </head>
 
 <body in=login>
@@ -40,15 +27,15 @@
         </p>
         <br>
         <p>密碼<br>
-            <input type="password" name="password" style="border:2px solid; margin-left:26px ;margin-top: 10px;" id="pw"
+            <input type="password" name="password" style="border:2px solid; margin-left:26px ;margin-top: 10px;" id="pw1"
                 name="password" size="26" required>
-            <i class="far fa-eye" id="eye" onclick="showEye()"></i>
+            <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
         </p>
         <br>
         <p><button class="btn"
                 style="width: 100px;height: 30px;cursor: pointer;background-color: #f8edb7;color:black;font-weight: bold;font-size:18px;">登入</button>
         </p>
-        <button id="forgetBtn">忘記密碼</button>
+        <button id="forgetBtn"><a href="forgetPwd.html" style="color:black;">忘記密碼</a></button>
         </p>
     </div>
     <div style="height:20px"></div>
