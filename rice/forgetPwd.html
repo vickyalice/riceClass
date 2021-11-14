@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利芳米行</title>
+    <link rel="stylesheet" href="all.css">
+    <script src="all.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jslib.js"></script>
+    <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
+</head>
+
+<body in=forgetPwd>
+    <include src="nav.html"></include>
+    <center>
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/rhvddzym.json" trigger="loop"
+            colors="primary:#121331,secondary:#08a88a" style="width:150px;height:150px">
+        </lord-icon>
+        <form>
+            <p>電子郵件(G-mail)<br>
+                <input type="text" name="gmail" placeholder="xxx@gmail.com">
+            </p>
+            <p>驗證碼:<br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="text" name="vCode">
+                <input type="button" value="驗證" class="btn">
+            </p>
+        </form>
+        <br>
+        <form class="setForm">
+            設定密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw1" class="password" name="pw1" required>
+            <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
+            <br><br>
+            確認密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw2" class="password" name="pw2" required>
+            <i class="far fa-eye" id="eye2" onclick="showEye2()"></i>
+            <br><br>
+            <input type="button" class="btn" value="確認">
+        </form>
+    </center>
+</body>
+
+</html>

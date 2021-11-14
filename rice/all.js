@@ -1,3 +1,4 @@
+/*riceType.html的表格顯示 */
 window.onload = function(){
     var rice = [
         {

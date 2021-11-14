@@ -1,4 +1,40 @@
+@charset "UTF-8";
 @import url(style.css);
+* {
+  font-family: "標楷體";
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: darkorange;
+}
+
+table {
+  margin: center;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  padding: 5px;
+}
+
+tr {
+  font-size: 16px;
+  border-top: 1px solid;
+}
+
+td {
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+}
+
 html[in="middle"] {
   margin-top: -50px;
 }
@@ -129,19 +165,20 @@ body[in="riceType"] input[type="submit"] {
   font-weight: bold;
 }
 
-body[in=cart] table {
+body[in="cart"] table {
   font-size: 24px;
 }
 
-body[in=cart] span {
+body[in="cart"] span {
   text-decoration: none;
+  font-size: 20px;
 }
 
-body[in=cart] td {
+body[in="cart"] td {
   height: 80px;
 }
 
-body[in=cart] #del {
+body[in="cart"] #del {
   width: 40px;
   height: 40px;
   font-size: 18px;
@@ -149,7 +186,30 @@ body[in=cart] #del {
   border: none;
 }
 
-body[in=cart] input[type="button"] {
+body[in="cart"] input[type="button"] {
+  cursor: pointer;
+}
+
+body[in="forgetPwd"] {
+  background-image: url("Images/riceTypeImage.png");
+}
+
+body[in="forgetPwd"] form {
+  border: 1px solid black;
+  width: 60%;
+}
+
+body[in="forgetPwd"] .setForm {
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+body[in="forgetPwd"] .btn {
+  font-size: 16px;
+  width: 60px;
+  border-radius: 8px;
+  background-color: white;
   cursor: pointer;
 }
 /*# sourceMappingURL=all.css.map */

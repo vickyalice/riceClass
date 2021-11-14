@@ -1,4 +1,32 @@
 @import url(style.css);
+*{
+  font-family:"標楷體";
+}
+p{
+  font-size:18px;
+}
+a {
+  color:darkorange;
+}
+table {
+  margin: center;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  padding: 5px;
+}
+tr {
+  font-size: 16px;
+  border-top: 1px solid;
+}
+td {
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+}
 html[in="middle"] {
   margin-top: -50px;
 }
@@ -48,8 +76,8 @@ body[in="index"] {
     width: 160px;
     height: 160px;
   }
-  #imgPosition span{
-    font-size:18px;
+  #imgPosition span {
+    font-size: 18px;
   }
 }
 body[in="login"] {
@@ -97,35 +125,55 @@ body[in="resigter"] {
     margin-right: auto;
   }
 }
-body[in="riceType"]{
-    background-image: url("Images/riceTypeImage.png");
-    text-align: center;
-    input[type="submit"]{
-        border-radius: 5px;
-        cursor: pointer;
-        background-color:#f8edb7;
-        font-size:15px;
-        font-weight:bold;
-    }
+body[in="riceType"] {
+  background-image: url("Images/riceTypeImage.png");
+  text-align: center;
+  input[type="submit"] {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8edb7;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
-body[in=cart]{
-  table{
-    font-size:24px;
+body[in="cart"] {
+  table {
+    font-size: 24px;
   }
-  span{
+  span {
     text-decoration: none;
+    font-size:20px;
   }
-  td{
-    height:80px;
+  td {
+    height: 80px;
   }
-  #del{
-    width:40px;
-    height:40px;
-    font-size:18px;
-    background-color:white;
+  #del {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: white;
     border: none;
   }
-  input[type="button"]{
+  input[type="button"] {
+    cursor: pointer;
+  }
+}
+body[in="forgetPwd"] {
+  background-image: url("Images/riceTypeImage.png");
+  form {
+    border: 1px solid black;
+    width: 60%;
+  }
+  .setForm {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .btn {
+    font-size: 16px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: white;
     cursor: pointer;
   }
 }

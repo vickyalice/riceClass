@@ -1,36 +1,8 @@
-*{
-    font-family: "標楷體";
-}
 h1{
     text-align: center;
 }
 span{
     text-decoration: underline;
-}
-a{
-    color:darkorange;
-}
-p{
-    font-size:18px;
-}
-table{
-    margin: center;
-    text-align: center;
-    border-collapse:collapse;
-    margin-left:auto; 
-    margin-right:auto;
-}
-th{
-    padding:5px;
-}
-tr{
-    font-size:16px;
-    border-top:1px solid;
-}
-td{
-    width: 150px;
-    height: 150px;
-    font-size:20px;
 }
 img{
     width: 150px;
