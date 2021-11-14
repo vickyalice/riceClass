@@ -10,6 +10,17 @@
     <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).resize(function(){
+                if($(window).width()>=1200){
+                    $('#imgPosition').show();
+                }else{
+                    $('#imgPosition').hide();
+                }
+            })
+        })
+    </script>
 </head>
 
 <body in=index>
