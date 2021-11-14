@@ -39,3 +39,28 @@ window.onload = function(){
     }
     $("#riceIntroduce").html(riceTable);
 }
+
+/*顯示密碼設定*/
+var flag = 0, flag2 = 0;
+function showEye1() {
+    if (flag == 0) {
+        document.getElementById("pw1").type = "text";
+        document.getElementById("eye1").className = "far fa-eye-slash";
+        flag = 1;
+    } else {
+        document.getElementById("pw1").type = "password";
+        document.getElementById("eye1").className = "far fa-eye";
+        flag = 0;
+    }
+}
+function showEye2() {
+    if (flag2 == 0) {
+        document.getElementById("pw2").type = "text";
+        document.getElementById("eye2").className = "far fa-eye-slash";
+        flag2 = 1;
+    } else {
+        document.getElementById("pw2").type = "password";
+        document.getElementById("eye2").className = "far fa-eye";
+        flag2 = 0;
+    }
+}
