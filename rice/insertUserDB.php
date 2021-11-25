@@ -11,10 +11,10 @@
     $sql = "INSERT INTO `user` (`name`,`phone`,`gmail`,`account`,`password`,`re_password`) VALUES('{$name}','{$phone}','{$gmail}','{$account}','{$password}','{$re_password}')";
     $result = mysqli_query($link,$sql);
     if(mysqli_affected_rows($link)>0){
-        header("Location:index.html");
+        echo "<script>alert('註冊成功');location.href='login.html';</script>";
     }elseif(mysqli_affected_rows($link)==0){
         echo "無資料新增";
     }else{
-        echo "{$sql} 語法執行失敗"+mysqli_error($link);
+        echo "<script>alert('註冊失敗');location.href='resigter.html';</script>";
     }
 ?>
