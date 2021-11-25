@@ -6,14 +6,14 @@
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
     <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
-    <script src = "all.js"></script>
+    <script src="all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
 </head>
 
 <body in=login>
     <include src="nav.html"></include>
-    
+
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     <h1 style="font-weight: bold;margin-right: 30px;">
         <lord-icon src="https://cdn.lordicon.com/dxjqoygy.json" trigger="hover"
@@ -21,23 +21,25 @@
         </lord-icon>Login
     </h1>
     <div style="height:10px"></div>
-    <div class="main">
-        <p>帳號<br>
-            <input type="text" name="account" class="borderBottom" style="margin-top: 10px;" size="26" required>
-        </p>
-        <br>
-        <p>密碼<br>
-            <input type="password" name="password" style="border:2px solid; margin-left:26px ;margin-top: 10px;" id="pw1"
-                name="password" size="26" required>
-            <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
-        </p>
-        <br>
-        <p><button class="btn"
-                style="width: 100px;height: 30px;cursor: pointer;background-color: #f8edb7;color:black;font-weight: bold;font-size:18px;">登入</button>
-        </p>
-        <button id="forgetBtn"><a href="forgetPwd.html" style="color:black;">忘記密碼</a></button>
-        </p>
-    </div>
+    <form method="post" action="checkLogin.php">
+        <div class="main">
+            <p>帳號<br>
+                <input type="text" name="account" class="borderBottom" style="margin-top: 10px;" size="26" required>
+            </p>
+            <br>
+            <p>密碼<br>
+                <input type="password" name="password" style="border:2px solid; margin-left:26px ;margin-top: 10px;"
+                    id="pw1" size="26" required>
+                <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
+            </p>
+            <br>
+            <p><input type="submit" class="btn" value="登入"
+                    style="width: 100px;height: 30px;cursor: pointer;background-color: #f8edb7;color:black;font-weight: bold;font-size:18px;">
+            </p>
+            <button id="forgetBtn"><a href="forgetPwd.html" style="color:black;">忘記密碼</a></button>
+            </p>
+        </div>
+    </form>
     <div style="height:20px"></div>
     <div id="footer">
         <p style="font-size:14px;">未註冊過，按下按鈕成為我們的新會員<br></p>

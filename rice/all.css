@@ -165,6 +165,10 @@ body[in="riceType"] input[type="submit"] {
   font-weight: bold;
 }
 
+body[in="cart"] {
+  background-image: url("Images/riceTypeImage.png");
+}
+
 body[in="cart"] table {
   font-size: 24px;
 }
