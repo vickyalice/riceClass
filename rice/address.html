@@ -7,17 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="lan.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
     <title>利芳米行</title>
+    <script>
+        function changeLan(lan) {
+            document.getElementById('buy').innerHTML = " ";
+            document.getElementById('address').innerHTML = " ";
+            document.getElementById('intr').innerHTML = " ";
+            document.getElementById('login').innerHTML = " ";
+            document.getElementById('res').innerHTML = " ";
+            document.getElementById('intrBuy').innerHTML = " ";
+            document.getElementById('cart').innerHTML = " ";
+            $("body").attr('lan', lan);
+        }
+    </script>
 </head>
 
 <body style="background-image: url('Images/riceTypeImage.png')">
     <include src="nav.html"></include>
-
+    <nav style="text-align: left;font-size: 20px;">
+        <a onclick="changeLan('繁中');" style="cursor: pointer;">繁中</a> |
+        <a onclick="changeLan('簡中');" style="cursor: pointer;">简中</a> |
+        <a onclick="changeLan('英文');" style="cursor: pointer;">English</a> |
+    </nav>
     <center>
-        <div style="font-size:20px;margin-top: 40px;">歡迎直接蒞臨購買<br><br><span style="text-decoration: underline yellow;">地址:宜蘭縣礁溪鄉湯圍溝溫泉路</span></div>
-        <div style="height:30px;"></div>
+        <div style="font-size:20px;margin-top: 40px;">
+            <span i18n=buy id="buy">歡迎直接蒞臨購買</span><br>
+            <span id="address" i18n=address style="text-decoration: underline yellow;">地址:宜蘭縣礁溪鄉湯圍溝溫泉路</span></div>
+        <div style="height:15px;"></div>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115890.53326241471!2d121.69605399103753!3d24.80985994444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467fa4947d62aa9%3A0xd2e0786dfa1f3704!2zMjYy5a6c6Jit57ij56SB5rqq6YSJ56SB5rqq!5e0!3m2!1szh-TW!2stw!4v1634822675896!5m2!1szh-TW!2stw"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">

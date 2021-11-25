@@ -1,0 +1,63 @@
+[lan="繁中"] [i18n="intr"]:before {
+  content: "首頁:米店介紹";
+}
+[lan="繁中"] [i18n="login"]:before {
+  content: "會員登入";
+}
+[lan="繁中"] [i18n="res"]:before {
+  content: "會員註冊";
+}
+[lan="繁中"] [i18n="intrBuy"]:before {
+  content: "介紹&購買";
+}
+[lan="繁中"] [i18n="cart"]:before {
+  content: "購物車";
+}
+[lan="簡中"] [i18n="intr"]:before {
+  content: "首页:米店介绍";
+}
+[lan="簡中"] [i18n="login"]:before {
+  content: "会员登入";
+}
+[lan="簡中"] [i18n="res"]:before {
+  content: "会员注册";
+}
+[lan="簡中"] [i18n="intrBuy"]:before {
+  content: "介绍&购买";
+}
+[lan="簡中"] [i18n="cart"]:before {
+  content: "购物车";
+}
+[lan="英文"] [i18n="intr"]:before {
+  content: "Home: Mi store introduction";
+}
+[lan="英文"] [i18n="login"]:before {
+  content: "Member login";
+}
+[lan="英文"] [i18n="res"]:before {
+  content: "Sign Up";
+}
+[lan="英文"] [i18n="intrBuy"]:before {
+  content: "Introduction & Buy";
+}
+[lan="英文"] [i18n="cart"]:before {
+  content: "shopping cart";
+}
+[lan="繁中"] [i18n="buy"]:before {
+  content: "歡迎直接蒞臨購買";
+}
+[lan="繁中"] [i18n="address"]:before {
+  content: "地址:宜蘭縣礁溪鄉湯圍溝溫泉路";
+}
+[lan="簡中"] [i18n="buy"]:before {
+  content: "欢迎直接莅临购买";
+}
+[lan="簡中"] [i18n="address"]:before {
+  content: "地址:宜兰县礁溪乡汤围沟温泉路";
+}
+[lan="英文"] [i18n="buy"]:before {
+  content: "Welcome directly to buy";
+}
+[lan="英文"] [i18n="address"]:before {
+  content: "Address: Spring Road, Tang Ditch, Raxi Township, Yilan County";
+}
