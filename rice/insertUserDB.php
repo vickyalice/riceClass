@@ -1,0 +1,20 @@
+<?php
+    require_once "connectDB.php";
+
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $gmail = $_POST['gmail'];
+    $account = $_POST['account'];
+    $password = $_POST['password'];
+    $re_password = $_POST['re_password'];
+
+    $sql = "INSERT INTO `user` (`name`,`phone`,`gmail`,`account`,`password`,`re_password`) VALUES('{$name}','{$phone}','{$gmail}','{$account}','{$password}','{$re_password}')";
+    $result = mysqli_query($link,$sql);
+    if(mysqli_affected_rows($link)>0){
+        header("Location:index.html");
+    }elseif(mysqli_affected_rows($link)==0){
+        echo "無資料新增";
+    }else{
+        echo "{$sql} 語法執行失敗"+mysqli_error($link);
+    }
+?>
