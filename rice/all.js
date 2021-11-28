@@ -65,3 +65,15 @@ function showEye2() {
         flag2 = 0;
     }
 }
+
+// 切換中英文
+function changeLan(lan) {
+    document.getElementById('buy').innerHTML = " ";
+    document.getElementById('address').innerHTML = " ";
+    document.getElementById('intr').innerHTML = " ";
+    document.getElementById('login').innerHTML = " ";
+    document.getElementById('res').innerHTML = " ";
+    document.getElementById('intrBuy').innerHTML = " ";
+    document.getElementById('cart').innerHTML = " ";
+    $("body").attr('lan', lan);
+}

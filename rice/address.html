@@ -8,30 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="lan.css">
+    <script src="all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
     <title>利芳米行</title>
-    <script>
-        function changeLan(lan) {
-            document.getElementById('buy').innerHTML = " ";
-            document.getElementById('address').innerHTML = " ";
-            document.getElementById('intr').innerHTML = " ";
-            document.getElementById('login').innerHTML = " ";
-            document.getElementById('res').innerHTML = " ";
-            document.getElementById('intrBuy').innerHTML = " ";
-            document.getElementById('cart').innerHTML = " ";
-            $("body").attr('lan', lan);
-        }
-    </script>
 </head>
 
 <body style="background-image: url('Images/riceTypeImage.png')">
     <include src="nav.html"></include>
-    <nav style="text-align: left;font-size: 20px;">
-        <a onclick="changeLan('繁中');" style="cursor: pointer;">繁中</a> |
-        <a onclick="changeLan('簡中');" style="cursor: pointer;">简中</a> |
-        <a onclick="changeLan('英文');" style="cursor: pointer;">English</a> |
-    </nav>
+    
     <center>
         <div style="font-size:20px;margin-top: 40px;">
             <span i18n=buy id="buy">歡迎直接蒞臨購買</span><br>
