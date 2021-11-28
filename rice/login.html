@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="lan.css">
     <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
     <script src="all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
@@ -23,11 +24,11 @@
     <div style="height:10px"></div>
     <form method="post" action="checkLogin.php">
         <div class="main">
-            <p>帳號<br>
+            <p><span id="account" i18n=account>帳號</span><br>
                 <input type="text" name="account" class="borderBottom" style="margin-top: 10px;" size="26" required>
             </p>
             <br>
-            <p>密碼<br>
+            <p><span id="pwd" i18n=pwd>密碼</span><br>
                 <input type="password" name="password" style="border:2px solid; margin-left:26px ;margin-top: 10px;"
                     id="pw1" size="26" required>
                 <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
@@ -42,7 +43,7 @@
     </form>
     <div style="height:20px"></div>
     <div id="footer">
-        <p style="font-size:14px;">未註冊過，按下按鈕成為我們的新會員<br></p>
+        <p id="txt" i18n=txt style="font-size:14px;">未註冊過，按下按鈕成為我們的新會員<br></p>
         <button class="btn" style="width: 200px;font-size:14px;"
             onclick="javascript:location.href='resigter.html';">CREATE NEW ACCOUNT</button>
     </div>

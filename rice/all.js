@@ -68,12 +68,32 @@ function showEye2() {
 
 // 切換中英文
 function changeLan(lan) {
-    document.getElementById('buy').innerHTML = " ";
-    document.getElementById('address').innerHTML = " ";
+    $("body").attr('lan', lan);
     document.getElementById('intr').innerHTML = " ";
     document.getElementById('login').innerHTML = " ";
     document.getElementById('res').innerHTML = " ";
     document.getElementById('intrBuy').innerHTML = " ";
     document.getElementById('cart').innerHTML = " ";
-    $("body").attr('lan', lan);
+    bodyName = $("body").attr('in');
+    if(bodyName=='address'){
+        document.getElementById('buy').innerHTML = " ";
+        document.getElementById('address').innerHTML = " ";
+    }else if(bodyName=='index'){
+        document.getElementById('intrStore1').innerHTML = " ";
+        document.getElementById('intrStore2').innerHTML = " ";
+        document.getElementById('intrStore3').innerHTML = " ";
+    }else if(bodyName=='login'){
+        document.getElementById('account').innerHTML = " ";
+        document.getElementById('pwd').innerHTML = " ";
+        // document.getElementById('loginBtn').innerHTML = " ";
+        // document.getElementById('forgetPwdBtn').innerHTML = " ";
+        document.getElementById('txt').innerHTML = " ";
+    }else if(bodyName=='resigter'){
+        document.getElementById('name').innerHTML = " ";
+        document.getElementById('phone').innerHTML = " ";
+        document.getElementById('account').innerHTML = " ";
+        document.getElementById('pwd').innerHTML = " ";
+        document.getElementById('re_pwd').innerHTML = " ";
+    }
+    
 }

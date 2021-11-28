@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="lan.css">
     <script src="https://kit.fontawesome.com/d3539c708b.js" crossorigin="anonymous"></script>
     <script src="all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
@@ -23,18 +24,18 @@
         <form method="post" action="insertUserDB.php">
             <div style="font-size:30px;text-shadow:1px 2px 1px #FFE153;">會員註冊</div>
             <div style="height:15px;"></div>
-            姓名<br><input type="text" name="name" required>
+            <span id="name" i18n=name>姓名</span><br><input type="text" name="name" required>
             <br><br>
-            連絡電話<br><input type="text" name="phone" placeholder="09-xxxxxxxx" required>
+            <span id="phone" i18n=phone>連絡電話</span><br><input type="text" name="phone" placeholder="09-xxxxxxxx" required>
             <br><br>
             G-mail<br><input type="text" name="gmail" placeholder="xxx@gmail.com" required>
             <br><br>
-            設定帳號<br><input type="text" name="account" required>
+            <span id="account" i18n=account>設定帳號</span><br><input type="text" name="account" required>
             <br><br>
-            設定密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw1" class="password" name="pw1" required>
+            <span id="pwd" i18n=pwd>設定密碼</span><br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw1" class="password" name="pw1" required>
             <i class="far fa-eye" id="eye1" onclick="showEye1()"></i>
             <br><br>
-            確認密碼<br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw2" class="password" name="pw2" required>
+            <span id="re_pwd" i18n=re_pwd>確認密碼</span><br>&nbsp&nbsp&nbsp&nbsp<input type="password" id="pw2" class="password" name="pw2" required>
             <i class="far fa-eye" id="eye2" onclick="showEye2()"></i>
             <div style="height:50px;"></div>
             <input class="btn" type="submit" value="註冊">

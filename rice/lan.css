@@ -1,3 +1,4 @@
+/* address.html */
 [lan="繁中"] [i18n="intr"]:before {
   content: "首頁:米店介紹";
 }
@@ -60,4 +61,127 @@
 }
 [lan="英文"] [i18n="address"]:before {
   content: "Address: Spring Road, Tang Ditch, Raxi Township, Yilan County";
+}
+
+/* index.html */
+[lan="繁中"] [i18n="intrStore1"]:before {
+  content: "位於宜蘭的一間小型自營的店";
+}
+[lan="繁中"] [i18n="intrStore2"]:before {
+  content: "我們的理想，是將優質的在地宜蘭米及品質良好的南部米";
+}
+[lan="繁中"] [i18n="intrStore3"]:before {
+  content: "銷售給信任我們的顧客";
+}
+[lan="簡中"] [i18n="intrStore1"]:before {
+  content: "位于宜兰的一间小型自营的店";
+}
+[lan="簡中"] [i18n="intrStore2"]:before {
+  content: "我们的理想，是将优质的在地宜兰米及品质良好的南部米";
+}
+[lan="簡中"] [i18n="intrStore3"]:before {
+  content: "销售给信任我们的顾客";
+}
+[lan="英文"] [i18n="intrStore1"]:before {
+  content: "A small self-operated shop in Yilan";
+}
+[lan="英文"] [i18n="intrStore2"]:before {
+  content: "Our ideals is to put high quality in Yilan rice and good quality southern rice";
+}
+[lan="英文"] [i18n="intrStore3"]:before {
+  content: "Sales to trust our customers";
+}
+
+/*login.html*/
+[lan="繁中"] [i18n="account"]:before {
+  content: "帳號";
+}
+[lan="繁中"] [i18n="pwd"]:before {
+  content: "密碼";
+}
+[lan="繁中"] [i18n="loginBtn"]:before {
+  content: "登入";
+}
+[lan="簡中"] [i18n="account"]:before {
+  content: "帐号";
+}
+[lan="簡中"] [i18n="pwd"]:before {
+  content: "密码";
+}
+[lan="簡中"] [i18n="loginBtn"]:before {
+  content: "登入";
+}
+[lan="英文"] [i18n="account"]:before {
+  content: "account number";
+}
+[lan="英文"] [i18n="pwd"]:before {
+  content: "password";
+}
+[lan="英文"] [i18n="loginBtn"]:before {
+  content: "login";
+}
+[lan="繁中"] [i18n="forgetPwdBtn"]:before {
+  content: "忘記密碼";
+}
+[lan="繁中"] [i18n="txt"]:before {
+  content: "未註冊過，按下按鈕成為我們的新會員";
+}
+[lan="簡中"] [i18n="forgetPwdBtn"]:before {
+  content: "忘记密码";
+}
+[lan="簡中"] [i18n="txt"]:before {
+  content: "未注册过，按下按钮成为我们的新会员";
+}
+[lan="英文"] [i18n="forgetPwdBtn"]:before {
+  content: "forget the password";
+}
+[lan="英文"] [i18n="txt"]:before {
+  content: "Unregistered, press the button to become our new member";
+}
+
+/*registered.html */
+[lan="繁中"] [i18n="name"]:before {
+  content: "姓名";
+}
+[lan="繁中"] [i18n="phone"]:before {
+  content: "連絡電話";
+}
+[lan="繁中"] [i18n="account"]:before {
+  content: "設定帳號";
+}
+[lan="簡中"] [i18n="name"]:before {
+  content: "姓名";
+}
+[lan="簡中"] [i18n="phone"]:before {
+  content: "连络电话";
+}
+[lan="簡中"] [i18n="account"]:before {
+  content: "设定帐号";
+}
+[lan="英文"] [i18n="name"]:before {
+  content: "Name";
+}
+[lan="英文"] [i18n="phone"]:before {
+  content: "Lunar phone";
+}
+[lan="英文"] [i18n="account"]:before {
+  content: "Set account";
+}
+[lan="繁中"] [i18n="pwd"]:before {
+  content: "設定密碼";
+}
+[lan="繁中"] [i18n="re_pwd"]:before {
+  content: "確認密碼";
+}
+[lan="簡中"] [i18n="pwd"]:before {
+  content: "设定密码";
+}
+[lan="簡中"] [i18n="re_pwd"]:before {
+  content: "确认密码";
+}
+[lan="英文"] [i18n="pwd"]:before {
+  content: "Set password";
+}
+[lan="英文"] [i18n="re_pwd"]:before {
+  content: "Confirm Password";
 }
