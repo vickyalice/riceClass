@@ -1,6 +1,9 @@
 h1{
     text-align: center;
 }
+span{
+    text-decoration: none;
+}
 
 img{
     width: 150px;
