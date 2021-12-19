@@ -28,18 +28,21 @@
         function rdel() {
             $('#rTb').hide();
             $('#rUp').text("0");
+            $('#rNum').val(0);
             changeSum();
         }
 
         function ldel() {
             $('#lTb').hide();
             $('#lUp').text("0");
+            $('#lNum').val(0);
             changeSum();
         }
 
         function bdel() {
             $('#bTb').hide();
             $('#bUp').text("0");
+            $('#bNum').val(0);
             changeSum();
         }
     </script>
@@ -71,7 +74,7 @@
             <tr id="rTb">
                 <td>圓米</td>
                 <td><span id="rUp">26</span></td>
-                <td><input type="number" name="rNum" id="rNum" value="10" min=10 max=1000 step=5 onchange="changeSum()"></td>
+                <td><input type="number" name="rNum" id="rNum" value="10" min=0 max=1000 step=5 onchange="changeSum()"></td>
                 <td><span id="rPrice" name="rPrice">260</span></td>
                 <td>
                     <input type="button" id="del" name="del" value="❌" onclick="rdel()">
@@ -80,7 +83,7 @@
             <tr id="lTb">
                 <td>長米</td>
                 <td id="lUp">29</td>
-                <td><input type="number" name="lNum" id="lNum" value="10" min=10 max=1000 step=5 onchange="changeSum()"></td>
+                <td><input type="number" name="lNum" id="lNum" value="10" min=0 max=1000 step=5 onchange="changeSum()"></td>
                 <td><span id="lPrice" name="lPrice">290</span></td>
                 <td>
                     <input type="button" id="del" name="del" value="❌" onclick="ldel()">
@@ -89,7 +92,7 @@
             <tr id="bTb">
                 <td>糙米</td>
                 <td id="bUp">30</td>
-                <td><input type="number" name="bNum" id="bNum" value="10" min=10 max=1000 step=5 onchange="changeSum()"></td>
+                <td><input type="number" name="bNum" id="bNum" value="10" min=0 max=1000 step=5 onchange="changeSum()"></td>
                 <td><span id="bPrice" name="bPrice">300</span></td>
                 <td>
                     <input type="button" id="del" name="del" value="❌" onclick="bdel()">

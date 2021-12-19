@@ -1,18 +1,23 @@
 <?php
+    session_start();
     require_once "connectDB.php";
     
     $rNum = $_POST['rNum'];
     $lNum = $_POST['lNum'];
     $bNum = $_POST['bNum'];
-    $buyTypeSum = [$rNum, $lNum, $bNum];
-    for($i = 0; $i < count($buyTypeSum); $i++){
-        $sql = "INSERT INTO `buyrice` (`userName`,`type`,`quantity`,`sum`) VALUES('{$buyTypeSum[$i]}','{$buyTypeSum[$i]}','{$buyTypeSum[$i]}','{$buyTypeSum[$i]}')";
+    $name = $_SESSION["name"];
+    $riceName = ['圓米','長米','糙米'];
+    $buyTypeNum = [$rNum, $lNum, $bNum];
+    $price = [26,29,30];
+    for($i = 0; $i < count($buyTypeNum); $i++){
+        $sum = $buyTypeNum[$i]*$price[$i];
+        $sql = "INSERT INTO `buyrice` (`userName`,`type`,`quantity`,`sum`) VALUES('{$name}','{$riceName[$i]}','{$buyTypeNum[$i]}','{$sum}')";
         $result = mysqli_query($link,$sql);
         if(mysqli_affected_rows($link)>0){
-            echo "<script>alert('註冊成功');location.href='login.html';</script>";
+            echo "<script>location.href='buySuccess.php';</script>";
         }elseif(mysqli_affected_rows($link)==0){
-            echo "無資料新增";
+            echo "無購買資料";
         }else{
-            echo "<script>alert('註冊失敗');location.href='resigter.html';</script>";
+            echo "<script>alert('購買失敗');';</script>";
         }
     }

@@ -14,7 +14,7 @@
 
 <body in=riceType>
     <include src="nav.html"></include>
-    
+    <h1>歡迎:<?php session_start(); echo $_SESSION["name"]; ?></h1>
     <div style="font-size:30px;">米種介紹</div>
     <form method="post" action="cart.php">
         <table style="border-top: 1px solid;border-bottom: 1px solid;">
@@ -33,11 +33,3 @@
 </body>
 
 </html>
-<?php
-    session_start();
-    
-    // $obj = json_decode(,true); //json轉php
-    //$_SESSION['name'] = 'a';
-    //echo $_SESSION['name'];
-    unset($_SESSION['name']); //刪除變數
-?>

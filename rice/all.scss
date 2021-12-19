@@ -188,3 +188,13 @@ body[in="forgetPwd"] {
     cursor: pointer;
   }
 }
+body[in="buySuccess"]{
+  background-image: url("Images/riceTypeImage.png");
+  button{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8edb7;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
