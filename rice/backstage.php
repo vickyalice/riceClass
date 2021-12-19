@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="lan.css">
+    <script src="all.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jslib.js"></script>
     <title>利芳米行</title>
 </head>
-<body>
+<body in=backstage>
+    <include src="nav.html"></include>
     <table>
         <tr>
             <th>購買人</th>

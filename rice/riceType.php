@@ -33,3 +33,11 @@
 </body>
 
 </html>
+<?php
+    session_start();
+    
+    // $obj = json_decode(,true); //json轉php
+    //$_SESSION['name'] = 'a';
+    //echo $_SESSION['name'];
+    unset($_SESSION['name']); //刪除變數
+?>
