@@ -14,7 +14,7 @@
         $sql = "INSERT INTO `buyrice` (`userName`,`type`,`quantity`,`sum`) VALUES('{$name}','{$riceName[$i]}','{$buyTypeNum[$i]}','{$sum}')";
         $result = mysqli_query($link,$sql);
         if(mysqli_affected_rows($link)>0){
-            echo "<script>location.href='buySuccess.php';</script>";
+            echo "<script>location.href='buySuccess.html';</script>";
         }elseif(mysqli_affected_rows($link)==0){
             echo "無購買資料";
         }else{

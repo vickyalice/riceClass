@@ -1,14 +1,14 @@
 @import url(style.css);
-*{
-  font-family:"標楷體";
+* {
+  font-family: "標楷體";
 }
-p{
-  font-size:18px;
+p {
+  font-size: 18px;
 }
 a {
-  color:darkorange;
+  color: darkorange;
 }
-span{
+span {
   text-decoration: none;
 }
 table {
@@ -146,7 +146,7 @@ body[in="cart"] {
   }
   span {
     text-decoration: none;
-    font-size:20px;
+    font-size: 20px;
   }
   td {
     height: 80px;
@@ -188,13 +188,24 @@ body[in="forgetPwd"] {
     cursor: pointer;
   }
 }
-body[in="buySuccess"]{
+body[in="buySuccess"] {
   background-image: url("Images/riceTypeImage.png");
-  .btn{
+  .btn {
     border-radius: 5px;
     cursor: pointer;
     background-color: #f8edb7;
     font-size: 15px;
     font-weight: bold;
+  }
+}
+body[in="backstage"] {
+  background-image: url("Images/riceTypeImage.png");
+  table {
+    font-size: 18px;
+  }
+  tr,
+  th {
+    font-style: normal;
+    font-size: 14px;
   }
 }

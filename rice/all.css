@@ -240,4 +240,18 @@ body[in="buySuccess"] .btn {
   font-size: 15px;
   font-weight: bold;
 }
+
+body[in="backstage"] {
+  background-image: url("Images/riceTypeImage.png");
+}
+
+body[in="backstage"] table {
+  font-size: 18px;
+}
+
+body[in="backstage"] tr,
+body[in="backstage"] th {
+  font-style: normal;
+  font-size: 14px;
+}
 /*# sourceMappingURL=all.css.map */
