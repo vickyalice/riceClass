@@ -190,7 +190,7 @@ body[in="forgetPwd"] {
 }
 body[in="buySuccess"]{
   background-image: url("Images/riceTypeImage.png");
-  button{
+  .btn{
     border-radius: 5px;
     cursor: pointer;
     background-color: #f8edb7;

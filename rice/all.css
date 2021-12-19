@@ -233,7 +233,7 @@ body[in="buySuccess"] {
   background-image: url("Images/riceTypeImage.png");
 }
 
-body[in="buySuccess"] button {
+body[in="buySuccess"] .btn {
   border-radius: 5px;
   cursor: pointer;
   background-color: #f8edb7;
