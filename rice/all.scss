@@ -201,11 +201,23 @@ body[in="buySuccess"] {
 body[in="backstage"] {
   background-image: url("Images/riceTypeImage.png");
   table {
-    font-size: 18px;
+    font-size: 24px;
+    height: 80px;
+    width:500px;
   }
-  tr,
-  th {
-    font-style: normal;
-    font-size: 14px;
+  td {
+    height: 30px;
+  }
+}
+body[in="fillup"] {
+  background-image: url("Images/riceTypeImage.png");
+
+  table {
+    text-align: left;
+  }
+  td {
+    height: 80px;
+    width:800px;
+    font-size:16px;
   }
 }

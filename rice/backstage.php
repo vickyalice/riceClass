@@ -16,6 +16,7 @@
 <body in=backstage>
     <include src="nav.php"></include>
 
+    <div style="height:30px;"></div>
     <table>
         <tr>
             <th>購買人</th>
@@ -31,11 +32,11 @@
         $selResult = mysqli_query($link, $sql);
         while ($row = mysqli_fetch_array($selResult, MYSQLI_ASSOC)) {
             echo "<tr>";
-            echo "<th>" . $row["userName"] . "</th>";
-            echo "<th>" . $row["type"] . "</th>";
-            echo "<th>" . $row["quantity"] . "</th>";
-            echo "<th>" . $row["sum"] . "</th>";
-            echo "<th><input type='checkbox'></th>";
+            echo "<td>" . $row["userName"] . "</td>";
+            echo "<td>" . $row["type"] . "</td>";
+            echo "<td>" . $row["quantity"] . "</td>";
+            echo "<td>" . $row["sum"] . "</td>";
+            echo "<td><input type='checkbox'></td>";
             echo "</tr>";
         }
         ?>

@@ -246,12 +246,26 @@ body[in="backstage"] {
 }
 
 body[in="backstage"] table {
-  font-size: 18px;
+  font-size: 24px;
+  height: 80px;
+  width: 500px;
 }
 
-body[in="backstage"] tr,
-body[in="backstage"] th {
-  font-style: normal;
-  font-size: 14px;
+body[in="backstage"] td {
+  height: 30px;
+}
+
+body[in="fillup"] {
+  background-image: url("Images/riceTypeImage.png");
+}
+
+body[in="fillup"] table {
+  text-align: left;
+}
+
+body[in="fillup"] td {
+  height: 80px;
+  width: 800px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=all.css.map */
