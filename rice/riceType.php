@@ -6,15 +6,14 @@
     <title>利芳米行</title>
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="lan.css">
-    <link rel="stylesheet" href="D:/fontawesome-free-5.15.3-web/css/all.css">
     <script src="all.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jslib.js"></script>
 </head>
 
 <body in=riceType>
-    <include src="nav.html"></include>
-    <h1>歡迎:<?php session_start(); echo $_SESSION["name"]; ?></h1>
+    <include src="nav.php"></include>
+
     <div style="font-size:30px;">米種介紹</div>
     <form method="post" action="cart.php">
         <table style="border-top: 1px solid;border-bottom: 1px solid;">
@@ -24,8 +23,6 @@
                 <th>價格</th>
                 <th>來源地</th>
                 <th>製作日期</th>
-                <th>購買數量</th>
-                <th>訂購</th>
             </tr>
             <tbody id="riceIntroduce"></tbody>
         </table>

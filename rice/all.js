@@ -34,8 +34,8 @@ window.onload = function(){
         riceTable += "<td>"+rice[i].price + "</td>";
         riceTable += "<td>"+rice[i].country + "</td>";
         riceTable += "<td>"+rice[i].year + "</td>";
-        riceTable += "<td><input type='number' name='"+rice[i].eng+"'Num value='10' min='10' max='1000' step='5'></td>";
-        riceTable += "<td><input type='submit' name='"+rice[i].eng+"'Buy value='加入購物車'></td>";
+        // riceTable += "<td><input type='number' name='"+rice[i].eng+"'Num value='10' min='10' max='1000' step='5'></td>";
+        // riceTable += "<td><input type='submit' name='"+rice[i].eng+"'Buy value='加入購物車'></td>";
         riceTable += "</tr>";
     }
     $("#riceIntroduce").html(riceTable);

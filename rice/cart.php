@@ -49,7 +49,7 @@
 </head>
 
 <body in=cart>
-    <include src="nav.html"></include>
+    <include src="nav.php"></include>
 
     <div style="height:60px;"></div>
     <center>

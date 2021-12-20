@@ -14,7 +14,7 @@
 </head>
 
 <body in=backstage>
-    <include src="nav.html"></include>
+    <include src="nav.php"></include>
 
     <table>
         <tr>
