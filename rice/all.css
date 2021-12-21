@@ -264,8 +264,39 @@ body[in="fillup"] table {
 }
 
 body[in="fillup"] td {
-  height: 80px;
+  height: 50px;
   width: 800px;
   font-size: 16px;
+}
+
+body[in="fillup"] select {
+  width: 100px;
+  height: 30px;
+}
+
+body[in="fillup"] input[name="name"] {
+  text-align: left;
+  width: 100px;
+  height: 20px;
+}
+
+body[in="fillup"] input[name="phone"] {
+  text-align: left;
+  width: 150px;
+  height: 20px;
+}
+
+body[in="fillup"] input[name="afterAddress"] {
+  text-align: left;
+  width: 300px;
+  height: 23px;
+}
+
+body[in="fillup"] input[type="submit"] {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f8edb7;
+  font-size: 15px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=all.css.map */

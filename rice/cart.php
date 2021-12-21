@@ -103,7 +103,7 @@
                 <td></td>
                 <td></td>
                 <td id="Sum" onchange="changeSum()">850</td>
-                <td><input type="submit" id="buyBtn" value="確認購買"></td>
+                <td><input type="hidden" name="cart"><input type="submit" id="buyBtn" value="下一步"></td>
             </tr>
         </table>
     </form>
