@@ -44,6 +44,15 @@
 [lan="英文"] [i18n="cart"]:before {
   content: "shopping cart";
 }
+[lan="繁中"] [i18n="backstage"]:before {
+  content: "後臺管理";
+}
+[lan="簡中"] [i18n="backstage"]:before {
+  content: "后台管理";
+}
+[lan="英文"] [i18n="backstage"]:before {
+  content: "Backstage management";
+}
 [lan="繁中"] [i18n="buy"]:before {
   content: "歡迎直接蒞臨購買";
 }

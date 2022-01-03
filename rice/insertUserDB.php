@@ -5,8 +5,8 @@
     $phone = $_POST['phone'];
     $gmail = $_POST['gmail'];
     $account = $_POST['account'];
-    $password = $_POST['password'];
-    $re_password = $_POST['re_password'];
+    $password = $_POST['pw1'];
+    $re_password = $_POST['pw2'];
 
     $sql = "INSERT INTO `user` (`name`,`phone`,`gmail`,`account`,`password`,`re_password`) VALUES('{$name}','{$phone}','{$gmail}','{$account}','{$password}','{$re_password}')";
     $result = mysqli_query($link,$sql);

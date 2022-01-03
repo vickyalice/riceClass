@@ -74,6 +74,7 @@ function changeLan(lan) {
     document.getElementById('res').innerHTML = " ";
     document.getElementById('intrBuy').innerHTML = " ";
     document.getElementById('cart').innerHTML = " ";
+    document.getElementById('backstage').innerHTML =" ";
     bodyName = $("body").attr('in');
     if(bodyName=='address'){
         document.getElementById('buy').innerHTML = " ";
