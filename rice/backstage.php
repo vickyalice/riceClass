@@ -35,7 +35,7 @@
         $selResult = mysqli_query($link, $sql);
         while ($row = mysqli_fetch_array($selResult, MYSQLI_ASSOC)) {
             echo "<tr>";
-            echo "<td>" . $row["userName"] . "</td>";
+            echo "<td>" . $row["username"] . "</td>";
             echo "<td>" . $row["type"] . "</td>";
             echo "<td>" . $row["quantity"] . "</td>";
             if ($row["type"] == '圓米') {
@@ -51,7 +51,7 @@
         }
         ?>
     </table>
-    <div style="position: relative;top:-300px; height:30vh; width:20vw">
+    <div style="position: relative;top:-100px; height:30vh; width:20vw">
         <canvas id="myChart" width="10" height="10"></canvas>
     </div>
 </body>
