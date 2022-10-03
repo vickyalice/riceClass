@@ -16,5 +16,3 @@
 
 [後臺管理]
 ![後臺管理](https://user-images.githubusercontent.com/56119317/184297274-70c91eb1-d42c-4b27-a1f9-3a5e68aa4f43.PNG)
-
-網頁觀看成果: http://vickyting.alwaysdata.net/index.html
